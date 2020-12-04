@@ -1,6 +1,75 @@
+:root {
+  --primary-tex-color: rgba(117, 117, 117, 1);
+  --title-text-color: rgba(33, 33, 33, 1);
+  --accent-color: rgba(33, 150, 243, 1);
+}
+
 body {
   background-color: #fff;
-  color: #212121;
+  color: var(--primary-tex-color);
+}
+
+.logo {
+  color: #2196f3;
+}
+
+.blacklogo {
+  color: black;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Site nav */
+.site-nav .link {
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: black;
+}
+
+/* Auth nav */
+.auth-nav .link {
+  color: var(--accent-color);
+}
+
+.auth-nav .link:hover,
+.link:focus {
+  color: black;
+}
+
+/* Hero */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: #fff;
+}
+
+/* Button */
+.button {
+  color: rgba(255, 255, 255, 1);
+  background-color: var(--accent-color);
+}
+
+/* Section */
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Advantages */
+.Advantages .title {
+  color: var(--title-text-color);
+}
+/* Crew */
+.Crew-title {
+  color: var(--title-text-color);
+}
+.Crew .title {
+  color: var(--title-text-color);
 }
 
 /* цвет основного текста color: #FFFFFF; */
