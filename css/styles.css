@@ -1,12 +1,17 @@
 :root {
-  --primary-tex-color: rgba(117, 117, 117, 1);
+  --primary-text-color: rgba(117, 117, 117, 1);
   --title-text-color: rgba(33, 33, 33, 1);
+  --primary-bg-color: rgba(255, 255, 255, 1);
   --accent-color: rgba(33, 150, 243, 1);
+  --background-color: rgba(47, 48, 58, 1);
+  --adress-text-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
-  background-color: #fff;
-  color: var(--primary-tex-color);
+  background-color: var(--primary-bg-color);
+  );
+  ;
+  color: var(--primary-text-color);
 }
 
 .logo {
@@ -31,6 +36,10 @@ body {
   color: black;
 }
 
+.site-nav .link.current {
+  color: black;
+}
+
 /* Auth nav */
 .auth-nav .link {
   color: var(--accent-color);
@@ -43,15 +52,25 @@ body {
 
 /* Hero */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 .hero-title {
-  color: #fff;
+  color: var(--title-color);
 }
 
 /* Button */
 .button {
-  color: rgba(255, 255, 255, 1);
+  color: var(--title-text-color);
+  background-color:rgba(245, 244, 250, 1);
+  }
+.filter-buttons .button-link:hover,
+.filter-buttons .button-link:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+
+.button.primary {
+  color: var(--primary-bg-color);
   background-color: var(--accent-color);
 }
 
@@ -72,6 +91,26 @@ body {
   color: var(--title-text-color);
 }
 
-/* цвет основного текста color: #FFFFFF; */
-/* вторичный цвет rgba(117, 117, 117, 1)*/
-/* цвет основного текста2 rgba(33, 33, 33, 1)*/
+/* footer */
+.whitelogo {
+  color: #ffffff;
+}
+.footer {
+  background-color: var(--background-color);
+}
+/* Address */
+.address {
+  color: var(--title-color);
+}
+.auth .link {
+  color: var(--adress-text-color);
+}
+.auth .link:hover,
+.link:focus {
+  color: #fff;
+}
+
+/* Portfolio */
+.portfolio-items .title {
+  color: var(--title-text-color);
+}
