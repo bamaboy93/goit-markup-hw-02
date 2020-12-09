@@ -1,25 +1,38 @@
 :root {
-  --primary-text-color: rgba(117, 117, 117, 1);
-  --title-text-color: rgba(33, 33, 33, 1);
-  --primary-bg-color: rgba(255, 255, 255, 1);
-  --accent-color: rgba(33, 150, 243, 1);
-  --background-color: rgba(47, 48, 58, 1);
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --secondary-bg-color: #2f303a;
+  --white-bg-color: #ffffff;
+  --crew-bg-color: #f5f4fa;
+  --accent-color: #2196f3;
   --adress-text-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
-  background-color: var(--primary-bg-color);
-  );
-  ;
+  background-color: var(--white-bg-color);
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/*Header*/
+header {
+  background-color: var(--white-bg-color);
 }
 
 .logo {
-  color: #2196f3;
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
 }
 
 .blacklogo {
-  color: black;
+  color: var(--title-text-color);
 }
 
 .list {
@@ -28,89 +41,144 @@ body {
 
 /* Site nav */
 .site-nav .link {
-  color: var(--accent-color);
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
-  color: black;
-}
-
+.site-nav .link:focus,
 .site-nav .link.current {
-  color: black;
+  color: var(--accent-color);
 }
 
 /* Auth nav */
 .auth-nav .link {
   color: var(--accent-color);
+  text-decoration: none;
 }
 
 .auth-nav .link:hover,
 .link:focus {
-  color: black;
+  color: var(--primary-text-color);
 }
 
 /* Hero */
 .hero {
-  background-color: var(--background-color);
+  background-color: var(--secondary-bg-color);
 }
 .hero-title {
-  color: var(--title-color);
+  color: var(--white-bg-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* Button */
 .button {
   color: var(--title-text-color);
-  background-color:rgba(245, 244, 250, 1);
-  }
-.filter-buttons .button-link:hover,
-.filter-buttons .button-link:focus {
-  color: var(--primary-bg-color);
+  background-color: var(--crew-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+.filter-buttons .button:hover,
+.filter-buttons .button:focus {
+  color: var(--white-bg-color);
   background-color: var(--accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-decoration: none;
 }
 
 .button.primary {
-  color: var(--primary-bg-color);
+  color: var(--white-bg-color);
   background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 /* Section */
 .section-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 /* Advantages */
-.Advantages .title {
+.advantages .title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 /* Crew */
-.Crew-title {
-  color: var(--title-text-color);
+.crew {
+  background-color: var(--crew-bg-color);
 }
-.Crew .title {
+.crew-list .title {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.crew-list .description {
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 /* footer */
 .whitelogo {
-  color: #ffffff;
+  color: var(--white-bg-color);
 }
-.footer {
-  background-color: var(--background-color);
+footer {
+  background-color: var(--secondary-bg-color);
 }
 /* Address */
 .address {
-  color: var(--title-color);
+  color: var(--white-bg-color);
+  font-style: normal;
 }
 .auth .link {
   color: var(--adress-text-color);
+  text-decoration: none;
 }
 .auth .link:hover,
-.link:focus {
-  color: #fff;
+.auth .link:focus {
+  color: var(--white-bg-color);
 }
 
 /* Portfolio */
+.portfolio-items .link {
+  text-decoration: none;
+}
+
 .portfolio-items .title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-items .description {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.8;
 }
