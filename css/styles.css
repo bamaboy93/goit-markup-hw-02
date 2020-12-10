@@ -43,8 +43,6 @@ header {
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -57,13 +55,13 @@ header {
 
 /* Auth nav */
 .auth-nav .link {
-  color: var(--accent-color);
+  color: var(--primary-text-color);
   text-decoration: none;
 }
 
 .auth-nav .link:hover,
 .link:focus {
-  color: var(--primary-text-color);
+  color: var(--accent-color);
 }
 
 /* Hero */
@@ -93,10 +91,6 @@ header {
 .filter-buttons .button:focus {
   color: var(--white-bg-color);
   background-color: var(--accent-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-decoration: none;
 }
 
 .button.primary {
